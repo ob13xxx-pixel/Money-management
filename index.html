@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1220">
+  <title>TRIWEALTH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div>
+        <div class="brand">TRIWEALTH</div>
+        <div class="tagline">Spend smart. Save steadily. Invest wisely.</div>
+      </div>
+      <button id="lockBtn" class="icon-btn" aria-label="Lock app">🔒</button>
+    </header>
+
+    <main id="screen" class="screen"></main>
+
+    <nav class="bottom-nav">
+      <button data-tab="home" class="nav-btn active">⌂<span>Home</span></button>
+      <button data-tab="budget" class="nav-btn">▤<span>Budget</span></button>
+      <button data-tab="goals" class="nav-btn">◎<span>Goals</span></button>
+      <button data-tab="ai" class="nav-btn">✦<span>TriAI</span></button>
+      <button data-tab="security" class="nav-btn">⚿<span>Security</span></button>
+    </nav>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div id="lockScreen" class="lock-screen hidden">
+    <div class="lock-card">
+      <div class="lock-logo">🔐</div>
+      <h2>TRIWEALTH Locked</h2>
+      <p>Your local data is protected by this app lock.</p>
+      <input id="pinInput" type="password" inputmode="numeric" maxlength="6" placeholder="PIN">
+      <button id="unlockBtn" class="primary">Unlock</button>
+      <small>Demo security: set/change your PIN from Security.</small>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
